@@ -1,0 +1,24 @@
+
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="card card-body col-md-5">
+      <form action="/login", method="POST"> 
+        <!-- USERNAME INPUT -->
+        <input type="text" name="username" placeholder="username" class="form-control" required> 
+        <!-- PASSWORD INPUT -->
+        <input type="password" name="contraseña" placeholder="Contraseña" class="form-control" required>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block">Ingresar</button>   
+        </div>        
+    
+        <br>         
+        </br>
+        <div class="form-group">
+            <a href="/cuenta/" class="btn btn_secondary">Registrarse</a>
+        </div>    
+
+      </form>
+</div>
+  {% endblock %}
+
